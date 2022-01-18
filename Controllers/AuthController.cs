@@ -31,7 +31,7 @@ namespace DAW_Blog_BE.Controllers
                 
             };
 
-            _repository.Create(user);
+            user = _repository.Create(user);
             return Ok(user);
             //return Created("succes", _repository.Create(user));
         }
@@ -76,6 +76,16 @@ namespace DAW_Blog_BE.Controllers
             }
             
 
+        }
+
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            Response.Cookies.Delete("jwt");
+            return Ok(new
+            {
+                message = "success"
+            });
         }
     }
 }

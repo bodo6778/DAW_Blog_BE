@@ -19,7 +19,7 @@ namespace DAW_Blog_BE.Data
         public User Create(User user)
         {
             _context.Users.Add(user);
-            user.Id = _context.SaveChanges();
+            _context.SaveChanges();
             return user;
         }
 

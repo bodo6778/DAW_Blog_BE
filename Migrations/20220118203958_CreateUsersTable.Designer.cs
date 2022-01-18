@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAW_Blog_BE.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20220118182825_CreateUsersTable")]
+    [Migration("20220118203958_CreateUsersTable")]
     partial class CreateUsersTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
