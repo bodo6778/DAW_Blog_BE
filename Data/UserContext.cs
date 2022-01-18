@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using auth.Models;
+using DAW_Blog_BE.Models;
 
-namespace auth.Data
+namespace DAW_Blog_BE.Data
 {
     public class UserContext : DbContext
     {

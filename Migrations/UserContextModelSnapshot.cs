@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using auth.Data;
+using DAW_Blog_BE.Data;
+
 
 namespace DAW_Blog_BE.Migrations
 {
@@ -18,7 +19,7 @@ namespace DAW_Blog_BE.Migrations
                 .HasAnnotation("ProductVersion", "5.0.13")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("auth.Models.User", b =>
+            modelBuilder.Entity("DAW_Blog_BE.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

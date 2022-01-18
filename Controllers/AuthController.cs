@@ -1,9 +1,9 @@
 using DAW_Blog_BE.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace auth.Controllers
+namespace DAW_Blog_BE.Controllers
 {
-    [Route("")]
+    [Route("api")]
     [ApiController]
     public class AuthController : Controller
     {
@@ -13,8 +13,8 @@ namespace auth.Controllers
         {
             _repository = repository;
         }
-        [HttpGet]
-        public IActionResult Hello()
+        [HttpPost("register")]
+        public IActionResult Register()
         {
             
             return Ok("succes");

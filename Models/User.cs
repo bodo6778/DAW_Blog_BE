@@ -1,4 +1,4 @@
-namespace auth.Models
+namespace DAW_Blog_BE.Models
 {
     public class User
     {

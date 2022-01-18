@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using auth.Data;
-using auth.Models;
+using DAW_Blog_BE.Data;
+using DAW_Blog_BE.Models;
 
 namespace DAW_Blog_BE.Data
 {
