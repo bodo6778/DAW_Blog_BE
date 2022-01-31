@@ -11,6 +11,7 @@ namespace DAW_Blog_BE.Data
         }
 
         public DbSet<User> Users { set; get; }
+        public DbSet<Article> Articles { set; get; }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder)
         {

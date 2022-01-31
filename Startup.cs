@@ -26,6 +26,7 @@ namespace DAW_Blog_BE
             services.AddControllers();
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IArticleRepository, ArticleRepository>();
             services.AddScoped<JWTService>();
         }
 
