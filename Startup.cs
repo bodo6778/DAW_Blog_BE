@@ -27,6 +27,7 @@ namespace DAW_Blog_BE
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IArticleRepository, ArticleRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<JWTService>();
         }
 
